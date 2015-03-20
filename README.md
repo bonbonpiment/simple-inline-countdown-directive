@@ -1,24 +1,5 @@
-/*global angular */
-(function (angular) {
-    'use strict';
-    angular.module('mainApp', ['countdownTimer'])
-        .controller('bodyController', function ($scope) {
-            $scope.dates = [
-                'October 31, 2015',
-                'November 26, 2015',
-                'December 25, 2015',
-                'February 14, 2016'
-            ];
-            $scope.countdowns = [
-                'Weeks',
-                'Days',
-                'Hours',
-                'Minutes',
-                'Seconds',
-                'Weeks | Days',
-                'Days | Hours | Minutes | Seconds'
-            ];
-            
-        });
-        
-}(angular));
+# simple-inline-countdown-directive
+A simple countdown angular directive
+# how to use
+* 'add js file to head of html'
+* 'add service to your angular app'
