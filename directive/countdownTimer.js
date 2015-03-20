@@ -18,7 +18,8 @@
                                 days: (1000 * 60 * 60 * 24),
                                 hours: (1000 * 60 * 60),
                                 minutes: (1000 * 60),
-                                seconds: 1000
+                                seconds: 1000,
+                                milliseconds: 1
                             },
                             unitsLeft = {},
                             returnString = '',
@@ -36,7 +37,7 @@
                                 }
                                 if (unitConstantForMillisecs.hasOwnProperty(unit.toLowerCase()) === false) {
                                     $interval.cancel(countDownInterval);
-                                    throw new Error('Unit: ' + unit + ' is not supported. Please use following units: weeks, days, hours, minutes, seconds');
+                                    throw new Error('Unit: ' + unit + ' is not supported. Please use following units: weeks, days, hours, minutes, seconds, milliseconds');
                                 }
 
                                 //saving unit left into object

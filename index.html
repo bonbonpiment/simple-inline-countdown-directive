@@ -14,13 +14,13 @@
     </head>
     <body ng-controller="bodyController">
         <div class="main">
-            <h2>Hello. It's Countdown Time!</h2>
-            <div class="container" ng-repeat="countdown in countdowns">
+            <h2 class="tada animated">It's Countdown Time!</h2>
+            <div class="container" ng-repeat="unitarray in units">
                 <div class="row">
-                    <div class="col-md-{{12 / dates.length}}" ng-repeat="date in dates">
+                    <div class="flipInX animated col-sm-{{12 / dates.length}}" ng-repeat="date in dates">
                         <div class="card">
-                            <h5>{{countdown}} till {{ date }}</h5>
-                            <strong countdown end-date="{{ date }}" units="{{ countdown }}"></strong>
+                            <h5>{{unitarray}} till {{ date }}</h5>
+                            <strong countdown end-date="{{ date }}" units="{{ unitarray }}"></strong>
                         </div>    
                     </div>
                 </div>
