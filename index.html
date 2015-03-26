@@ -15,8 +15,8 @@
     <body ng-controller="bodyController">
         <div class="main">
             <h2 class="tada animated">It's Countdown Time!</h2>
-            <div class="container" ng-repeat="unitarray in units">
-                <div class="row-fluid">
+            <div class="container-fluid" ng-repeat="unitarray in units">
+                <div class="row">
                     <div class="flipInX animated col-sm-{{12 / dates.length}}" ng-repeat="date in dates">
                         <div class="card">
                             <h5>{{unitarray}} till {{ date }}</h5>
